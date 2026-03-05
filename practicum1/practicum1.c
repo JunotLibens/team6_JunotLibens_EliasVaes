@@ -14,7 +14,7 @@ int main(){
         pos[i].x =((float)rand() / RAND_MAX) * 10; // positie van x en y en z tussen 0 en 10
         pos[i].y =((float)rand() / RAND_MAX) * 10;
         pos[i].z =((float)rand() / RAND_MAX) * 10;
-        printf("pos[%d]: (%.2f, %.2f, %.2f)\n", i, pos[i].x, pos[i].y, pos[i].z);
+        printf("%d: (x:%.2f, y:%.2f, z:%.2f)\n", i, pos[i].x, pos[i].y, pos[i].z);
     }
     return 0;
 }
