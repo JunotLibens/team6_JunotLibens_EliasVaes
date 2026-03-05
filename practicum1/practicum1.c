@@ -24,8 +24,8 @@ int main(){
     printf("position Data:\n");
     for (int i = 0; i < Size; i++) {
         int ind = indices[i]; 
-        printf("%d -> x:%.2f, y:%.2f, z:%.2f\n",
-               i, ind,
+        printf("%d : x:%.2f, y:%.2f, z:%.2f\n",
+               ind,
                data[ind].x,  
                data[ind].y,
                data[ind].z);
