@@ -9,27 +9,13 @@ struct position {
 };
 
 int main(){
-    struct position data[Size] ;
+    struct position pos[Size] ;
     for (int i = 0; i < Size; i++) {
-        data[i].x =((float)rand() / RAND_MAX) * 10; // positie van x en y en z tussen 0 en 10
-        data[i].y =((float)rand() / RAND_MAX) * 10;
-        data[i].z =((float)rand() / RAND_MAX) * 10;
+        pos[i].x =((float)rand() / RAND_MAX) * 10; // positie van x en y en z tussen 0 en 10
+        pos[i].y =((float)rand() / RAND_MAX) * 10;
+        pos[i].z =((float)rand() / RAND_MAX) * 10;
+        printf("pos[%d]: (%.2f, %.2f, %.2f)\n", i, pos[i].x, pos[i].y, pos[i].z);
     }
-
-    int indices[Size];
-    for (int i = 0; i < Size; i++) {
-        indices[i] = i;
-    }
-    
-    printf("position Data:\n");
-    for (int i = 0; i < Size; i++) {
-        int ind = indices[i]; 
-        printf("%d : x:%.2f, y:%.2f, z:%.2f\n",
-               ind,
-               data[ind].x,  
-               data[ind].y,
-               data[ind].z);
-    }
-
     return 0;
 }
+test
