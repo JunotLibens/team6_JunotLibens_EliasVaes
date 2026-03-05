@@ -11,9 +11,9 @@ struct position {
 int main(){
     struct position data[Size] ;
     for (int i = 0; i < Size; i++) {
-        data[i].x =((float)rand() / RAND_MAX) * 10; // positie van x en y en z tussen 0 en 10
-        data[i].y =((float)rand() / RAND_MAX) * 10;
-        data[i].z =((float)rand() / RAND_MAX) * 10;
+        data[i].x = rand() %5; // positie van x en y en z tussen 0 en 10
+        data[i].y = rand() %5;
+        data[i].z = rand() %5;
     }
 
     int indices[Size];
